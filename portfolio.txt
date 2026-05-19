@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>My Portfolio</title>
+<style>
+body{ background:#eef0f8; font-family:Arial; margin:0; }
+.header{ background:#4c63ff; color:white; padding:30px; }
+.box{ background:white; margin:20px; padding:20px; border-radius:10px; }
+h2{ color:#4c63ff; }
+span{ background:#dfe3ff; padding:8px; border-radius:15px; margin:5px; display:inline-block; }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>Talluri Rishitha</h1>
+<p>B.Tech 1st Year Student | 
+GRIET Hyderabad</p>
+</div>
+<div class="box">
+<h2>👋 About Me</h2>
+<p>Hi! I'm Talluri Rishitha, a first-year B.Tech student at GRIET Hyderabad. I am passionate about coding, web development, and learning new technologies.</p>
+</div>
+<div class="box">
+<h2>🎓 Education</h2>
+<p><b>Degree:</b> B.Tech</p>
+<p><b>Year:</b> 1st Year</p>
+<p><b>College:</b> GRIET Hyderabad</p>
+</div>
+<div class="box">
+<h2>💻 Skills</h2>
+<span>C</span>
+<span>Python</span>
+<span>HTML</span>
+<span>CSS</span>
+</div>
+<div class="box">
+<h2>🏆 Achievements</h2>
+<p>✔ Solved 500+ problems in CodeChef</p>
+<p>✔ Solved 100+ problems in LeetCode</p>
+</div>
+<div class="box">
+<h2>🚀 Projects</h2>
+<p><b>Introduction Webpage</b></p>
+<p>Developed a simple introduction webpage using HTML to display my profile, skills, achievements, and contact details.</p>
+</div>
+<div class="box">
+<h2>📬 Contact</h2>
+<p>📍 Hyderabad, India</p>
+<p>📧 rishithatalluri2008@gmail.com</p>
+</div>
+</body>
+</html>
