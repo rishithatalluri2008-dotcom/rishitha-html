@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Thing</title>
+</head>
+
+<body>
+
+    <h1><u>My Favourite Movie</u></h1>
+
+    <p>My favourite movie name is Hridayam.</p>
+
+    <br/>
+    <hr/>
+
+    <h2>Characters in Movie</h2>
+
+    <ol>
+        <li>Pranav Mohanlal</li>
+        <li>Kalyani Priyadarshan</li>
+        <li>Darshana Rajendran</li>
+    </ol>
+
+    <hr/>
+
+    <h2>Movie Content</h2>
+
+    <ul>
+        <li>College life and friendships</li>
+        <li>Love story and emotional journey</li>
+        <li>Family emotions and personal growth</li>
+    </ul>
+
+    <h3>Movie Streaming Website</h3>
+
+    <a href="https://www.hotstar.com" target="_blank">Watch Movie</a>
+
+</body>
+</html>
