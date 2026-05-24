@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Registration Form</title>
+</head>
+<body>
+
+    <h2>College Registration Form</h2>
+
+    <form>
+
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" placeholder="Enter phone number"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female<br><br>
+
+        <label>Course:</label><br>
+        <select>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>Mechanical</option>
+        </select><br><br>
+
+        <label>Address:</label><br>
+        <textarea rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
