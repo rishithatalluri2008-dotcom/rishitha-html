@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School News Website</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>School News</h1>
+        <p>Daily Updates and Announcements</p>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+
+        <!-- News Articles -->
+        <section>
+
+            <article>
+                <h2>Annual Day Celebration</h2>
+                <p>The school annual day will be celebrated on Friday.</p>
+            </article>
+
+            <article>
+                <h2>Science Fair</h2>
+                <p>Students displayed creative science projects today.</p>
+            </article>
+
+            <article>
+                <h2>Holiday Notice</h2>
+                <p>School will remain closed on Monday due to a public holiday.</p>
+            </article>
+
+        </section>
+
+        <!-- Sidebar -->
+        <aside>
+
+            <h2>Upcoming Events</h2>
+
+            <ul>
+                <li>Drawing Competition</li>
+                <li>Sports Meet</li>
+                <li>Quiz Competition</li>
+            </ul>
+
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 School News Website</p>
+    </footer>
+
+</body>
+
+</html>
