@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Book {
+    int id;
+    char title[50];
+    char author[50];
+};
+
+void addBook() {
+    FILE *fp = fopen("books.txt", "a");
+    struct Book b;
+
+    printf("Enter Book ID: ");
+    scanf("%d", &b.id);
+
+    printf("Enter Book Title: ");
+    scanf(" %[^\n]", b.title);
+
+    printf("Enter Author Name: ");
+    scanf(" %[^\n]", b.author);
+
+    fwrite(&b, sizeof(b), 1, fp);
+    fclose(fp);
+
+    printf("\nBook Added Successfully!\n");
+}
+
+void displayBooks() {
+    FILE *fp = fopen("books.txt", "r");
+    struct Book b;
+
+    if (fp == NULL) {
+        printf("\nNo Records Found!\n");
+        return;
+    }
+
+    printf("\n----- Library Books -----\n");
+
+    while (fread(&b, sizeof(b), 1, fp)) {
+        printf("\nBook ID : %d", b.id);
+        printf("\nTitle   : %s", b.title);
+        printf("\nAuthor  : %s\n", b.author);
+    }
+
+    fclose(fp);
+}
+
+void searchBook() {
+    FILE *fp = fopen("books.txt", "r");
+    struct Book b;
+    int id, found = 0;
+
+    printf("Enter Book ID to Search: ");
+    scanf("%d", &id);
+
+    while (fread(&b, sizeof(b), 1, fp)) {
+        if (b.id == id) {
+            printf("\nBook Found");
+            printf("\nTitle  : %s", b.title);
+            printf("\nAuthor : %s\n", b.author);
+            found = 1;
+            break;
+        }
+    }
+
+    if (!found)
+        printf("\nBook Not Found!\n");
+
+    fclose(fp);
+}
+
+int main() {
+    int choice;
+
+    while (1) {
+        printf("\n===== Library Management System =====");
+        printf("\n1. Add Book");
+        printf("\n2. Display Books");
+        printf("\n3. Search Book");
+        printf("\n4. Exit");
+        printf("\nEnter Choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                addBook();
+                break;
+            case 2:
+                displayBooks();
+                break;
+            case 3:
+                searchBook();
+                break;
+            case 4:
+                printf("\nThank You!\n");
+                exit(0);
+            default:
+                printf("\nInvalid Choice!\n");
+        }
+    }
+
+    return 0;
+}
